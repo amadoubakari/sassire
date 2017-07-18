@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>     
+        <div class="col-xs-12">
+            <div class="col-xs-6">
+            </div>
+            <div class="col-xs-3">
+                <?php
+                //echo "Le message est :".$annuler;
+                if (true) {
+                    echo '<div class="col-xs-10">
+                    <p>Bienvenue <b style="color:#F2B662"> AMADOU BAKARI </b> |  <a data-toggle="modal" data-target="#form-connexion" href="#">   Déconnexion</a></p>
+                    </div>';
+                    echo '';
+                } else {
+                    echo '<p> Bienvenue chez<b> SASSIRE GROUP  |<a data-toggle="modal" data-target="#form-connexion" href="#">   Connexion</a></b></p>';
+                }
+                ?>
+            </div>
+            <div class="col-xs-2">
+                <div class="dropdown">
+                    <?php
+                    if (true) {
+                        echo "<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle glyphicon glyphicon-envelope\" ><span class=\"badge\" style=\" background:red;
+   position:relative;
+   top: -10px;
+   left: -5px;\">42</span></a>";
+                    } else {
+                        echo '';
+                    }
+                    ?>
+                    <ul class="dropdown-menu" style="left: -150px">
+                        <div class="log-arrow-up"></div>
+                        <div class="col-xs-12" style="border-bottom: 2px solid #F4F4F4 ; margin: 0;padding: 0">
+                            <li><a href="#">
+                                    <div class="col-xs-12" style=" margin: 0;padding: 0">
+                                        <div class="col-xs-2" style="padding: 5px">
+                                            <img class="img-responsive img-circle" src="<?php echo$this->basePath('img/team/team2.png'); ?>"  alt=""
+                                                 width="30" height="30"  />
+                                        </div>
+                                        <div class="col-xs-10 notification-title" style=" margin: 0;padding: 0">Passang Gamaliel</div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p class="notification-content">La satisfaction de nos clients est la priorité .........</p>
+                                    </div>
+                                    <div class="col-xs-12 notification-footer">Since 2 hour(s)</div> 
+                                </a>
+                            </li>
+                        </div> 
+                        <div class="arrow">
+                            <li><a href="#">
+                                    <div class="notification-see-all"> Voir tous les messages</div> 
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>   
+            <div class="col-xs-1">
+                <img height="25" width="25" class="img-responsive img-circle" src="<?php echo$this->basePath('img/team/team2.png'); ?>" alt="" />
+            </div>
+        </div>
+
+
+        <div class="modal fade col-lg-12"  data-backdrop="true"  id="form-connexion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-top: 5%">
+            <div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 aligncenter" style="border: 2px solid #CBE6F4; background-color: white">
+                    <div class="arrow"></div>
+                    <div>
+                        <form class="form-signin" method="POST" action="#">   
+                            <!--        <h2 class="form-signin-heading text-center">Authentification</h2>-->
+                            <br><br> <br><br>
+                            <div class="col-xs-12">
+                                <div class="col-xs-offset-4">
+                                    <img class="img-responsive img-circle" src="<?php echo $this->basePath('img/avatar.jpg'); ?>" alt=""
+                                         width="150"/><br><br>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <input type="text"  value="<?php //echo $login;                                                       ?>" id="login" class="form-control active" name="login" placeholder="User name" required="true" autofocus="" />
+                            </div>
+                            <div class="col-xs-12"><br> 
+                                <input type="password" value="" id="password" class="form-control" name="password" placeholder="Password" required="true"/> 
+                            </div> 
+                            <div class="col-xs-12">
+                                <br>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remember me
+                                </label>
+                            </div>
+                            <div class="form-group center-block col-xs-12">
+                                <br><br>
+                                <button type="submit" class="btn btn-primary" name="send" id="send" data-loading-text="Connexion ...">&nbsp;Connexion <span class="glyphicon glyphicon-log-in"></span></button>
+                                <button type="submit" class="btn btn-warning" name="cancel" id="cancel" data-loading-text="annuler ...">&nbsp;&nbsp;Annuler&nbsp; <span class="glyphicon glyphicon-log-in"></span></button>
+                                <div id="loader">
+                                </div><br><br>
+                            </div>
+                            <div>
+                                <div class="col-xs-6">
+                                    <a href="#" data-toggle="modal" data-target="#reset-password-form">Mot de passe oublié?</a>
+                                    <br><br>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#" data-toggle="modal" data-target="#form">Créer un nouveau compte</a>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-offset-2">
+                                <p class="text-danger"> <?php //echo $msg;                                                       ?></p>
+                            </div><br><br>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        <!-- Formulaire pour la resstauration du mot de passe -->
+        <div class="modal fade" id="reset-password-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form class="form-horizontal col-lg-12" method="POST" enctype="multipart/form-data" style="border: 2px solid #CBE6F4;background-color: white">
+                        <div>
+                            <br/>
+                            <p class="text-center text-primary" style="font-family: serif; font-size: 14px; font-weight: bold">Restitution du mot de passe </p>
+                            <hr>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label">Email :</label>
+                                <div class="col-sm-8">
+                                    <input type="text"  class="form-control"  name="email" id="email" placeholder="Mettez votre adresse email">
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="modal-footer modal-arrow">
+                            <a href="#" type="button" class="btn btn-primary">Envoyer</a>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Annuler</button>               
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(
+                    function () {
+                        $('#send').mousedown(
+                                function () {
+                                    if ($('#login').val() !== "" && $('#password').val() !== "") {
+                                        $('#loader').append('<img src="<?php echo $this->basePath('img/ajax-loader.gif'); ?>">').fadeIn('fast', 0.2);
+                                    }
+
+                                });
+
+                        if (<?php echo $_SESSION['ok']; ?>) {
+                            $('#form-connexion').modal('hide');
+                        } else {
+                            $('#form-connexion').modal('show');
+                        }
+                    }
+            );
+        </script>
+    </body>
+</html>

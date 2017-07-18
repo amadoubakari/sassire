@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/logo.png'))
+                ->prependStylesheet($this->basePath('css/contact/animate.min.css'))
+                ->prependStylesheet($this->basePath('css/contact/font-awesome.min.css'))
+                ->prependStylesheet($this->basePath('css/contact/lightbox.css'))
+                ->prependStylesheet($this->basePath('css/contact/main.css'))
+                ->prependStylesheet($this->basePath('css/contact/presets/preset1.csss'))
+                ->prependStylesheet($this->basePath('css/contact/responsive.css'));
+        ?>
+
+        <!-- Scripts -->
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath('js/contact/jquery.js'))
+                ->prependFile($this->basePath('js/contact/wow.min.js'))
+                ->prependFile($this->basePath('js/contact/mousescroll.js'))
+                ->prependFile($this->basePath('js/contact/smoothscroll.js'))
+                ->prependFile($this->basePath('js/contact/jquery.countTo.js'))
+                ->prependFile($this->basePath('js/contact/jquery.countTo.js'))
+                ->prependFile($this->basePath('js/contact/main.js'));
+        ?>
+    </head><!--/head-->
+
+    <body>
+        <div id="contact-us" class="parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <h2>Contactez nous</h2>
+                    </div>
+                </div>
+                <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <form method="post" action="">
+                                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Nom" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Adresse Email" required="required">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Objet" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Entrez votre message" required="required"></textarea>
+                                </div>                        
+                                <div class="form-group">
+                                    <button type="submit" name="envoyer" value="send" class="btn-submit btn-primary">Envoyer</button>
+                                </div>
+                            </form>   
+                            <?php
+                            if (isset($_POST['envoyer'])) {
+                                $name = @trim(stripslashes($_POST['name']));
+                                $from = @trim(stripslashes($_POST['email']));
+                                $subject = @trim(stripslashes($_POST['subject']));
+                                $message = @trim(stripslashes($_POST['message']));
+                                $to = 'contact@sassire.com';
+
+                                $headers = array();
+                                $headers[] = "MIME-Version: 1.0";
+                                $headers[] = "Content-type: text/plain; charset=iso-8859-1";
+                                $headers[] = "From: {$name} <{$from}>";
+                                $headers[] = "Reply-To: <{$from}>";
+                                $headers[] = "Subject: {$subject}";
+                                $headers[] = "X-Mailer: PHP/" . phpversion();
+
+                                if (mail($to, $subject, $message, $from)) {
+                                    echo 'Envoi reussi avec succès !!!!';
+                                } else {
+                                    echo 'Echec d\'envoi';
+                                }
+                            }
+                            ?>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <p>SASSIRE est une entreprise dont l'activité principale est centrée sur la prestation des services informatiques en général, en particulier le développement des applications et la consultation.</p>
+                                <ul class="address">
+                                    <li><i class="glyphicon glyphicon-envelope"></i> <span> Adresse:</span> Yaoundé Cameroun </li>
+                                    <li><i class="fa fa-phone"></i> <span> Téléphone:</span> +237 690 660 199/ 674 316 936  </li>
+                                    <li><i class="fa fa-envelope"></i> <span> Adresse Email:</span><a href="mailto:contact@sassire.com"> contact@sassire.com</a></li>
+                                    <li><i class="fa fa-globe"></i> <span> Site:</span> <a href="www.sassire.com">www.sassire.com</a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

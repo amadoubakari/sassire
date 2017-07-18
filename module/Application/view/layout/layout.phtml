@@ -1,0 +1,49 @@
+<?= $this->doctype() ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?= $this->headTitle('Sassire Group Sarl')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?=
+                $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?=
+                $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/sassire.ico'])
+                ->prependStylesheet($this->basePath('css/style.css'))
+                ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
+                ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+        ?>
+
+        <!-- Scripts -->
+        <?=
+                $this->headScript()
+                ->prependFile($this->basePath('js/bootstrap.min.js'))
+                ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+        ?>
+    </head>
+    <body>   
+        <div class="col-xs-12 custom-div">
+            <?= $this->render('header.phtml'); ?>
+        </div>
+        <div class="col-xs-12 custom-div">
+            <?= $this->render('navbar.phtml'); ?>
+        </div>
+        <div class="col-xs-12 custom-div">
+            <?= $this->render('userInfos.phtml'); ?>
+        </div>
+        <div class="col-xs-12 custom-div">
+            <?= $this->render('slider.phtml'); ?>
+        </div>
+        <div class="col-xs-12 custom-div">
+            <?= $this->content ?>            
+        </div>
+        <div class="col-xs-12">              
+            <?= $this->render('footer.phtml'); ?>
+        </div>        
+    </body>
+</html>

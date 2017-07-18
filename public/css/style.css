@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Cormorant+Upright:400,700|Dancing+Script:700|Great+Vibes|Scheherazade|Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Cormorant+Upright:400,700|Dancing+Script:700|Great+Vibes|Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant');
+@import url('https://fonts.googleapis.com/css?family=Buda:300|Cormorant+Infant');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+body {
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+
+.zf-green {
+    color: #68b604;
+}
+
+.btn-success {
+    background-color: #57a900;
+    background-image: -moz-linear-gradient(top, #70d900, #57a900);
+    background-image: -ms-linear-gradient(top, #70d900, #57a900);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
+    background-image: -webkit-linear-gradient(top, #70d900, #57a900);
+    background-image: -o-linear-gradient(top, #70d900, #57a900);
+    background-image: linear-gradient(top, #70d900, #57a900);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+    background-color: #57a900;
+}
+
+div.container a.navbar-brand > img {
+    display: inline;
+    margin-right: 4px;
+    margin-top: -2px;
+}
+
+/*
+common styles
+*/
+
+.p-service{
+    color: black;
+    opacity: 0.7;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+}
+
+.cv-title{
+    color: #79B7E8;
+    text-align: center;
+    font-family: 'Scheherazade', serif;
+    font-size: 30px;
+    border-bottom: 4px #F4F4F4 solid;
+    text-transform: uppercase
+}
+.cv-footer{
+    color: #79B7E8;
+    text-align: left;
+    font-family: 'Scheherazade', serif;
+    font-size: 26px;
+    border-top: 4px #F4F4F4 solid;
+    text-transform: uppercase
+}
+.menu-element{
+    color: white;
+    opacity: 1;
+    text-align: left;
+    font-family: 'Quintessential', cursive;
+    font-size: 14px;
+}
+.footer-menu-element{
+    color: black;
+    text-align: left;
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.7;   
+}
+
+.header{
+    color: black;
+    /*    opacity: 0.6;*/
+    text-align: left;
+    font-family: 'Quintessential', cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.notification-title{
+    color: #79B7E8;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.notification-footer{
+    color: #79B7E8;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.notification-see-all{
+    color: #79B7E8;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.notification-image{
+    vertical-align: central;
+    margin-top: 30px;
+    /*    border: solid 1px black */
+}
+.notification-content{
+    color: background;
+    opacity: 0.8;
+    font-size: 16px
+}
+
+.notification-badge {
+    padding: 1px 9px 2px;
+    font-size: 12.025px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #999999;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+.badge:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.cv-label{
+    font-size: 40px;
+    font-weight: bold;
+    color: indigo;
+    opacity: 0.9;
+}
+.cv-value{
+    font-size: 20px;
+    color: black;
+    opacity: 0.6;
+    font-family: 'Poiret One', cursive;
+}
+
+.service-item{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: #79B7E8;
+    font-size: 26px;
+}
+
+.team-item{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: #79B7E8;
+    font-size: 22px;
+}
+
+.img-feature-1 {
+    -webkit-box-shadow: -1px -1px 58px -13px rgba(0,0,0,.9);
+    -moz-box-shadow: -1px -1px 58px -13px rgba(0,0,0,.9);
+    -ms-box-shadow: -1px -1px 58px -13px rgba(0,0,0,.9);
+    -o-box-shadow: -1px -1px 58px -13px rgba(0,0,0,.9);
+    box-shadow: -1px -1px 58px -13px rgba(0,0,0,.9);
+}
+
+.realization-item{
+    background-color: transparent;
+    padding-left: 100px; 
+    padding-top: 100px;
+    text-align: center;
+}
+
+.element-item{
+    color: black;
+    opacity: 0.8;
+    /*    font-family: 'Quintessential', cursive;*/
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 36px;
+}
+.element-sub-item{
+    color: black;
+    opacity: 0.9;
+    /*    font-family: 'Quintessential', cursive;*/
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.team-item-title{
+    color: #79B7E8;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.service-item-label{
+    color: black;
+    opacity: 0.9;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+}
+
+.log-arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    top: -10px
+}
+
+
+/*-- css footer--*/
+.footer-title{
+    margin-left: 15px;
+    color: black;
+    opacity: 1;
+    size: 28px;
+    font-family: 'Cormorant Upright', serif;
+    text-transform: uppercase;
+}
+.footer-menu-element{
+    color: black;
+    text-align: left;
+    font-family:  'Cormorant Upright', sans-serif;
+    font-size: 16px;
+    font-weight: bold;  
+    opacity: 0.5;
+}
+
+.social-icon-item{
+    height: 25px;
+    width: 25px;
+}
+
+.social-icon-item-paiement{
+    height: 100px;
+    width: 100px;
+}
+
+.social-icon-item:hover{
+    background-color: white;    
+}
+.li-item {
+    display: block;
+}
+
+.li-item:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+    opacity: 0.7;
+}
+
+
+.title-first-letter{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: #79B7E8;
+    font-size: 30px;
+}
+.p-txt{
+    margin-left: 0px;
+    color: black;
+    size: 36px;
+    font-family: 'Cormorant Upright', serif;
+    opacity: 0.8;
+}
+
+.p-txt-list{
+    margin-left: 0px;
+    color: black;
+    size: 36px;
+    font-family: 'Cormorant Upright', serif;
+    opacity: 0.8;
+}
+.copyright{
+    margin-left: 0px;
+    color: #017DC3;
+    size: 36px;
+    font-family: 'Cormorant Upright', serif;
+}
+.footer{
+    background-color: #F2F2F2; bottom: 0;
+    border-bottom: 1px solid #79B7E8;
+}
+/*
+Divisions costomisées header, navbar, slider, content, footer
+*/
+.custom-div{
+    padding-left: 0;
+    padding-right: 0;
+}
