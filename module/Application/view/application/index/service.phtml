@@ -12,7 +12,15 @@
 
 
         <!-- Custom CSS -->
-        <!--        <link href="customer/service/css/agency.css" rel="stylesheet">-->
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath('customer/service/js/classie.js'))
+                ->prependFile($this->basePath('customer/service/js/cbpAnimatedHeader.js'))
+                ->prependFile($this->basePath('customer/service/js/jqBootstrapValidation.js'))
+                ->prependFile($this->basePath('customer/service/js/contact_me.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath('customer/service/js/agency.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
 
     </head>
 
@@ -99,16 +107,18 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="<?php echo $this->basePath('img/about/about_3.png'); ?>" title="Cliquer sur l'image pour l'agrandir" alt="">
+                                <img class="img-circle img-responsive" width="400" height="400" src="<?php echo $this->basePath('img/about/about_3.png'); ?>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 class="team-item-title">2013-2014</h4>
                                     <h4 class="subheading">Commencement</h4>
                                 </div>
-                                <div class="timeline">
-                                    <p class="p-service">Une équipe de 02 personnes<br>
-                                        Développement des applications Web et des sites Web.</p>
+                                <div class="timeline-body">
+                                    <p class="text-muted p-service">Une équipe de 02 personnes<br>
+                                        Développement des applications Web.<br>
+                                        et<br>
+                                        des sites Web</p>
                                 </div>
                             </div>
                         </li>
@@ -160,6 +170,9 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="<?php echo $this->basePath('img/about/about_5.png'); ?>" alt="">
+                            </div>
                             <div class="timeline-image" style="background-color: white;color: black; opacity: 0.5">
                                 <h4>Notre 
                                     <br>Bel
@@ -754,15 +767,7 @@
     </div>
 
     <!-- Scripts -->
-    <?php
-    echo $this->headScript()
-            ->prependFile($this->basePath('customer/service/js/classie.js'))
-            ->prependFile($this->basePath('customer/service/js/cbpAnimatedHeader.js'))
-            ->prependFile($this->basePath('customer/service/js/jqBootstrapValidation.js'))
-            ->prependFile($this->basePath('customer/service/js/contact_me.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
-            ->prependFile($this->basePath('customer/service/js/agency.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
-    ;
-    ?>
+
     <script>
         $('.tree-toggle').click(function () {
             $(this).parent().children('ul.tree').toggle(200);

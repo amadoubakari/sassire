@@ -230,7 +230,7 @@ common styles
 /*-- css footer--*/
 .footer-title{
     margin-left: 15px;
-    color: black;
+    color: white;
     opacity: 1;
     size: 28px;
     font-family: 'Cormorant Upright', serif;
@@ -283,7 +283,7 @@ common styles
 }
 .p-txt{
     margin-left: 0px;
-    color: black;
+    color: white;
     size: 36px;
     font-family: 'Cormorant Upright', serif;
     opacity: 0.8;
@@ -291,7 +291,7 @@ common styles
 
 .p-txt-list{
     margin-left: 0px;
-    color: black;
+    color: white;
     size: 36px;
     font-family: 'Cormorant Upright', serif;
     opacity: 0.8;
@@ -303,7 +303,8 @@ common styles
     font-family: 'Cormorant Upright', serif;
 }
 .footer{
-    background-color: #F2F2F2; bottom: 0;
+    background-color: black; bottom: 0;
+    opacity:  0.6;
     border-bottom: 1px solid #79B7E8;
 }
 /*
