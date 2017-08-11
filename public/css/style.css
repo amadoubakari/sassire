@@ -50,6 +50,7 @@ common styles
     font-family: 'Buda', cursive;
 }
 
+
 .cv-title{
     color: #79B7E8;
     text-align: center;
@@ -166,9 +167,8 @@ common styles
 
 .team-item{
     font-family: 'Poiret One', cursive;
-    font-weight: bold;
     color: #79B7E8;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .img-feature-1 {
@@ -286,7 +286,6 @@ common styles
     color: white;
     size: 36px;
     font-family: 'Cormorant Upright', serif;
-    opacity: 0.8;
 }
 
 .p-txt-list{
@@ -294,7 +293,6 @@ common styles
     color: white;
     size: 36px;
     font-family: 'Cormorant Upright', serif;
-    opacity: 0.8;
 }
 .copyright{
     margin-left: 0px;
@@ -303,8 +301,7 @@ common styles
     font-family: 'Cormorant Upright', serif;
 }
 .footer{
-    background-color: black; bottom: 0;
-    opacity:  0.6;
+    background-color: #4C4C4C; bottom: 0;
     border-bottom: 1px solid #79B7E8;
 }
 /*
@@ -313,4 +310,62 @@ Divisions costomisées header, navbar, slider, content, footer
 .custom-div{
     padding-left: 0;
     padding-right: 0;
+}
+
+/*
+realisation au niveau 
+*/
+
+/*menu*/
+.realisation-menu-item{
+    border-right: 1px solid black;
+    margin-right: 15px;
+    padding-left: 30px; 
+    font-size: 15px;    
+}
+.realisation-menu-item:hover{
+    color: #79B7E8;
+}
+
+/*realisation modal*/
+.modal-dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:50%;
+    height:50%;
+}
+
+
+/*raccourci realisation*/
+.realisation-snapshot{
+    padding-top: 15px;
+}
+
+/*entete appercu realisation*/ 
+.realisation-snapshot-header{
+    color: #79B7E8;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+}
+
+.realisation-snapshot-footer{
+    color: #79B7E8;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+}
+
+
+.realisation-snapshot-body{
+    color: black;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
+}
+
+.realisation-snapshot-img{
+    width: 300px;
+    height: 200px
 }

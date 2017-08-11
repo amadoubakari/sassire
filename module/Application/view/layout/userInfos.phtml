@@ -16,7 +16,7 @@ and open the template in the editor.
             <div class="col-xs-3">
                 <?php
                 //echo "Le message est :".$annuler;
-                if (true) {
+                if (false) {
                     echo '<div class="col-xs-10">
                     <p>Bienvenue <b style="color:#F2B662"> AMADOU BAKARI </b> |  <a data-toggle="modal" data-target="#form-connexion" href="#">   Déconnexion</a></p>
                     </div>';
@@ -29,7 +29,7 @@ and open the template in the editor.
             <div class="col-xs-2">
                 <div class="dropdown">
                     <?php
-                    if (true) {
+                    if (false) {
                         echo "<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle glyphicon glyphicon-envelope\" ><span class=\"badge\" style=\" background:red;
    position:relative;
    top: -10px;
@@ -66,7 +66,13 @@ and open the template in the editor.
                 </div>
             </div>   
             <div class="col-xs-1">
-                <img height="25" width="25" class="img-responsive img-circle" src="<?php echo$this->basePath('img/team/team2.png'); ?>" alt="" />
+                <img height="25" width="25" class="img-responsive img-circle" src="<?php
+                if (true) {
+                    
+                } else {
+                    echo$this->basePath('img/team/team2.png');
+                }
+                ?>" alt="" />
             </div>
         </div>
 
@@ -87,7 +93,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <div class="col-xs-12">
-                                <input type="text"  value="<?php //echo $login;                                                       ?>" id="login" class="form-control active" name="login" placeholder="User name" required="true" autofocus="" />
+                                <input type="text"  value="<?php //echo $login;                                                        ?>" id="login" class="form-control active" name="login" placeholder="User name" required="true" autofocus="" />
                             </div>
                             <div class="col-xs-12"><br> 
                                 <input type="password" value="" id="password" class="form-control" name="password" placeholder="Password" required="true"/> 
@@ -116,7 +122,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <div class="col-lg-offset-2">
-                                <p class="text-danger"> <?php //echo $msg;                                                       ?></p>
+                                <p class="text-danger"> <?php //echo $msg;                                                        ?></p>
                             </div><br><br>
                         </form>
                     </div>

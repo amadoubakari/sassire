@@ -9,10 +9,10 @@
     </div>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">                 
-            <li class="  menu-element"><a href="#">ACCUEIL</a></li>                     
+            <li class="  menu-element"><a href="<?= $this->url('application', ['action'=>'index'])  ?>">ACCUEIL</a></li>                     
             <li class="  menu-element"><a href="<?= $this->url('application', ['action'=>'service'])  ?>">SERVICES</a></li>
-            <li class="  menu-element"><a href="<?= $this->url('application', ['action'=>'realization'])  ?>">REALISATIONS</a></li>
-            <li class="  menu-element"><a href="#services">MODELES</a></li> 
+            <li class="  menu-element"><a href="<?= $this->url('application', ['action'=>'realistion'])  ?>">REALISATIONS</a></li>
+            <li class="  menu-element"><a href="#">MODELES</a></li> 
             <li class="  menu-element"><a href="#dreamteam<?php //echo $this->url('application/default', array('controller' => 'Index', 'action' => 'team'));  ?>">EQUIPE</a></li>
             <li class="  menu-element"><a href="<?= $this->url('application', ['action'=>'contact'])  ?>">CONTACT</a></li>                        
         </ul>

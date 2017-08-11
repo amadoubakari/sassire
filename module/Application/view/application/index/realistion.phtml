@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<style>
+    .modal-dialog {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width:50% ;
+        height:50% ;
+    }
+
+</style>
+<div class="col-lg-12" >
+    <div>
+        <ul class="list-inline">
+            <li class="active realisation-menu-item"><a href="#">Tous</a></li>
+            <li class="realisation-menu-item">Applications Mobiles</li>
+            <li class="realisation-menu-item">Applications Web</li>
+            <li class="realisation-menu-item">Sites Web</li>
+            <li class="realisation-menu-item">Desktop Applications</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <div class="col-lg-3 realisation-snapshot">
+            <div class="col-lg-12">
+                <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <img class="img-thumbnail img-responsive realisation-snapshot-img" src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco5.jpg'); ?>" title="Cliquez dessus pour voir plus de détails" data-toggle="tooltip">
+                </a>                
+            </div>
+            <div class="col-lg-12 text-center text-justify">
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-header">Titre du projet</h4>
+                </div>
+                <div class="col-lg-12">
+                    <p class="realisation-snapshot-body">Description du projet et de la phase de realisation du projet</p>
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-footer">
+                        Du période allant 01 au 20 janvier 2017
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 realisation-snapshot">
+            <div class="col-lg-12">
+                <a href="#" data-toggle="modal" data-target=".schoolfiles-modal">
+                    <img class="img-thumbnail img-responsive  realisation-snapshot-img" src="<?php echo $this->basePath('img/realisation/web/schoolfiles/schoolfiles3.PNG'); ?>" title="Cliquez dessus pour voir plus de détails" data-toggle="tooltip">
+                </a>                
+            </div>
+            <div class="col-lg-12 text-center text-justify">
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-header">Titre du projet</h4>
+                </div>
+                <div class="col-lg-12">
+                    <p class="realisation-snapshot-body">Description du projet et de la phase de realisation du projet</p>
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-footer">
+                        Du période allant 01 au 20 janvier 2017
+                    </h4>
+                </div>
+            </div>
+        </div>
+<!--        <div class="col-lg-3 realisation-snapshot">
+            <div class="col-lg-12">
+                <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <img class="img-thumbnail img-responsive" src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco5.jpg'); ?>" title="Cliquez dessus pour voir plus de détails" data-toggle="tooltip">
+                </a>                
+            </div>
+            <div class="col-lg-12 text-center text-justify">
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-header">Titre du projet</h4>
+                </div>
+                <div class="col-lg-12">
+                    <p class="realisation-snapshot-body">Description du projet et de la phase de realisation du projet</p>
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-footer">
+                        Du période allant 01 au 20 janvier 2017
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 realisation-snapshot">
+            <div class="col-lg-12">
+                <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <img class="img-thumbnail img-responsive" src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco5.jpg'); ?>" title="Cliquez dessus pour voir plus de détails" data-toggle="tooltip">
+                </a>                
+            </div>
+            <div class="col-lg-12 text-center text-justify">
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-header">Titre du projet</h4>
+                </div>
+                <div class="col-lg-12">
+                    <p class="realisation-snapshot-body">Description du projet et de la phase de realisation du projet</p>
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-footer">
+                        Du période allant 01 au 20 janvier 2017
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 realisation-snapshot">
+            <div class="col-lg-12">
+                <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <img class="img-thumbnail img-responsive" src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco5.jpg'); ?>" title="Cliquez dessus pour voir plus de détails" data-toggle="tooltip">
+                </a>                
+            </div>
+            <div class="col-lg-12 text-center text-justify">
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-header">Titre du projet</h4>
+                </div>
+                <div class="col-lg-12">
+                    <p class="realisation-snapshot-body">Description du projet et de la phase de realisation du projet</p>
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="realisation-snapshot-footer">
+                        Du période allant 01 au 20 janvier 2017
+                    </h4>
+                </div>
+            </div>
+        </div>-->
+    </div> 
+</div>
+
+
+
+
+<!-- Partie reservée aux modals-->
+<!-- Applications mobiles -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div>
+        <img class="img-responsive close" style="padding-top: 60px" width="50" height="50" data-dismiss="modal" aria-hidden="true" src="<?php echo $this->basePath('img/close2.png'); ?>" title="Cliquez dessus pour voir plus de détails" alt="fermer" data-toggle="tooltip">
+    </div>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+
+
+
+
+            <!--            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title">Modal title</h4>
+                        </div>-->
+            <!--            <div class="modal-body">-->
+
+
+            <div id="myCarousel" class="carousel slide">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <img class="" src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco5.jpg'); ?>">
+                        <div class="carousel-caption" style="background-color: gray">
+                            <h3>entete</h3>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <img class="img-thumbnail img-responsive img-fluid center-block"src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco2.jpg'); ?>">
+                    </div>
+                    <div class="item"> 
+                        <img class="img-thumbnail img-responsive"src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco3.jpg'); ?>">
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--            </div>-->
+            <!--            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>-->
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--projets web >> schoolfiles-->
+<div class="modal fade schoolfiles-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div>
+        <img class="img-responsive close" style="padding-top: 60px" width="50" height="50" data-dismiss="modal" aria-hidden="true" src="<?php echo $this->basePath('img/close2.png'); ?>" title="Cliquez dessus pour voir plus de détails" alt="fermer" data-toggle="tooltip">
+    </div>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">   
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <img class="" src="<?php echo $this->basePath('img/realisation/web/schoolfiles/schoolfiles3.PNG'); ?>">
+                        <div class="carousel-caption" style="background-color: gray">
+                            <h3>entete</h3>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <img class="img-thumbnail img-responsive img-fluid center-block"src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco2.jpg'); ?>">
+                    </div>
+                    <div class="item"> 
+                        <img class="img-thumbnail img-responsive"src="<?php echo $this->basePath('img/realisation/web/cicmaco/cicmaco3.jpg'); ?>">
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.carousel').carousel({
+    interval: 5000;
+    wrap:"true";
+    ride:false;
+    });
+</script>

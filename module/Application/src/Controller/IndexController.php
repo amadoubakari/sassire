@@ -39,4 +39,9 @@ class IndexController extends AbstractActionController {
         return new ViewModel();
     }
 
+    public function realistionAction() {
+        $this->layout()->setTemplate('layout/layout2');
+        return new ViewModel();
+    }
+
 }
