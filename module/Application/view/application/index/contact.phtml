@@ -30,12 +30,12 @@
             <div class="container">
                 <div class="row">
                     <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                        <h2>Contactez nous</h2>
+                        <h3 class="contact-title">Contactez nous</h3>
                     </div>
                 </div>
                 <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 contact-paragraph">
                             <form method="post" action="">
                                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                                     <div class="col-sm-6">
@@ -76,21 +76,22 @@
                                 $headers[] = "X-Mailer: PHP/" . phpversion();
 
                                 if (mail($to, $subject, $message, $from)) {
-                                    echo 'Envoi reussi avec succès !!!!';
+                                    echo 'Envoi effectué avec succès !!!!';
                                 } else {
                                     echo 'Echec d\'envoi';
                                 }
                             }
                             ?>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 contact-paragraph">
                             <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <p>SASSIRE est une entreprise dont l'activité principale est centrée sur la prestation des services informatiques en général, en particulier le développement des applications et la consultation.</p>
+                                <p ><span class="title-second-letter">SASSIRE GROUP Sarl </span> est une entreprise dont l'activité principale est centrée sur la prestation des services informatiques en général, en particulier le développement des applications et le consulting</p>
+                                <br>    <br>    <br>
                                 <ul class="address">
-                                    <li><i class="glyphicon glyphicon-envelope"></i> <span> Adresse:</span> Yaoundé Cameroun </li>
-                                    <li><i class="fa fa-phone"></i> <span> Téléphone:</span> +237 690 660 199/ 674 316 936  </li>
-                                    <li><i class="fa fa-envelope"></i> <span> Adresse Email:</span><a href="mailto:contact@sassire.com"> contact@sassire.com</a></li>
-                                    <li><i class="fa fa-globe"></i> <span> Site:</span> <a href="www.sassire.com">www.sassire.com</a></li>
+                                    <li><i class="glyphicon glyphicon-home"></i>&nbsp; <span> Adresse:&nbsp;</span><span class="title-third-letter">Yaoundé Cameroun </span></li>
+                                    <li><i class="fa fa-phone"></i>&nbsp; <span> Téléphone:&nbsp;</span><span class="title-third-letter"> (00237) 690 660 199/ 674 316 936</span></li>
+                                    <li><i class="fa fa-envelope"></i> &nbsp;<span> Adresse Email:&nbsp;</span><span><a href="mailto:contact@sassire.com"  class="title-third-letter"> contact@sassire.com</a></span></li>
+                                    <li><i class="fa fa-globe"></i> &nbsp;<span> Site:&nbsp;</span> <span><a href="www.sassire.com" class="title-third-letter">www.sassire.com</a></span></li>
                                 </ul>
                             </div>                            
                         </div>
