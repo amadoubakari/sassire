@@ -15,4 +15,22 @@ class Module
     {
         return include __DIR__ . '/../config/module.config.php';
     }
+    
+    /**
+     * 
+     * @param type int the value of person id 
+     * @param type string
+     * @param type boolean 
+     * @author Gamaliel Passang <gamaliel.passang@gmail.com>
+     * @copyright (c) 2018, SASSIRE GROUP Sarl
+     * @name $globalVariableName
+     * @since 12/01/1018
+     * @version 1.0
+     * @todo Description
+     * @return type Description
+     */
+    public function testUsers($param,$param2,$param3) {
+        return;
+        
+    }
 }

@@ -74,13 +74,14 @@ common styles
     font-family: 'Quintessential', cursive;
     font-size: 14px;
 }
+
+
 .footer-menu-element{
     color: black;
     text-align: left;
     font-family: 'Poiret One', cursive;
     font-size: 22px;
-    font-weight: bold;
-    opacity: 0.7;   
+    font-weight: bold; 
 }
 
 .header{
@@ -260,6 +261,7 @@ common styles
 }
 .li-item {
     display: block;
+    color: white;
 }
 
 .li-item:before {
@@ -295,8 +297,8 @@ common styles
     font-family: 'Cormorant Upright', serif;
 }
 .copyright{
-    margin-left: 0px;
-    color: #017DC3;
+    margin-left: 20px;
+    color: #79B7E8;
     size: 36px;
     font-family: 'Cormorant Upright', serif;
 }
@@ -341,6 +343,12 @@ realisation au niveau
 
 
 /*raccourci realisation*/
+
+.realisation-snapshot-div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin: 15px;
+}
 .realisation-snapshot{
     padding-top: 15px;
 }
@@ -405,4 +413,26 @@ realisation au niveau
     font-size: 20px;
     font-family: 'Buda', cursive;
     text-justify: auto;
+}
+
+/*les carousels de realisation*/
+.realisation-carousel-background{
+    background-color: black;
+    opacity: 0.5;
+    -moz-border-radius:10px 0;
+    -webkit-border-radius:10px 0;
+    border-radius:10px 0;
+
+}
+
+/*barre de navigation*/
+.nav > li.menu-element>a:hover{
+    border-top: 0.5px solid black;
+}
+
+/*maintenance du site*/
+.maintenance{
+    color: #79B7E8;
+    font-size: 20px;
+    font-family: 'Buda', cursive;
 }

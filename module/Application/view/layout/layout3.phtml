@@ -1,0 +1,59 @@
+<?= $this->doctype() ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?= $this->headTitle('Sassire Group Sarl')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?=
+                $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?=
+                $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/sassire.ico'])
+                ->prependStylesheet($this->basePath('css/style.css'))
+                ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
+                ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+        ?>
+
+        <!-- Scripts -->
+        <?=
+                $this->headScript()
+                ->prependFile($this->basePath('js/bootstrap.min.js'))
+                ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+        ?>
+    </head>
+    <body style="padding: 0;margin: 0">   
+        <div class="col-xs-12 custom-div">
+            <?= $this->render('navbar.phtml'); ?>
+        </div>
+        <div class="col-xs-12 custom-div">
+            <?= $this->render('userInfos.phtml'); ?>
+        </div>
+        <div class="col-xs-12 custom-div">
+            <?= $this->content ?>            
+        </div>
+        <div class="col-xs-12 custom-div" id="foot">              
+            <?= $this->render('footer.phtml'); ?>
+        </div>   
+
+        <script>
+            $(document).ready(function () {
+
+                var docHeight = $(window).height();
+                var footerHeight = $('#foot').height();
+                var footerTop = $('#foot').position().top + footerHeight;
+
+                if (footerTop < docHeight) {
+                    $('#foot').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+                }
+
+
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </body>
+</html>

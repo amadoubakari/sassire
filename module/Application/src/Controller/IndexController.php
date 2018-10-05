@@ -44,4 +44,8 @@ class IndexController extends AbstractActionController {
         return new ViewModel();
     }
 
+    public function modeleAction() {
+         $this->layout()->setTemplate('layout/layout3');
+        return new ViewModel();
+    }
 }
